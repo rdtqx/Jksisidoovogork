@@ -7,7 +7,7 @@ export default function Home() {
   const setDiscordStatus = async () => {
     setLoading(true);
     try {
-      const response = await fetch('/api/set-status', {
+      const response = await fetch('/set-status', {
         method: 'POST'
       });
       const data = await response.json();
